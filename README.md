@@ -7,8 +7,11 @@ Requirements:
 - keras-multi-head
 
 Papers used for reference:
-- 
-- 
+- Humor Detection in English-Hindi Code-Mixed Social Media Content : Corpus and Baseline System <sup>[link](https://arxiv.org/abs/1806.05513v1)</sup>
+- Detecting Offensive Tweets in Hindi-English Code-Switched Language <sup>[link](https://www.aclweb.org/anthology/W18-3504)</sup>
+- Learning Joint Multilingual Sentence Representations with Neural Machine Translation <sup>[link](https://www.aclweb.org/anthology/W17-2619)</sup>
+- Humor Detection in English-Hindi Code-Mixed Social Media Content : Corpus and Baseline System <sup>[link](https://aclweb.org/anthology/L18-1193) </sup>
+
 
 Embeddings used:
 - Elmo
