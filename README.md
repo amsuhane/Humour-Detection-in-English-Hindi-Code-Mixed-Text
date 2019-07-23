@@ -1,17 +1,9 @@
-Run ``generate_embeddings.py`` to create embeddings and store in ``Embeddings/``. ``Models/All_model_trials.py`` contains all the tried architecture and models variations. ``Models/Best_models.py`` contains the best models, whose hyperparameters have been tuned using grid search.
+Run ``generate_embeddings.py`` to create embeddings and store in ``embeddings/``. ``models/All_model_trials.py`` contains all the tried architecture and models variations. ``models/Best_models.py`` contains the best models, whose hyperparameters have been tuned using grid search.
 The best models have been saved to be further used in ensemble model.
 
-Along with these BERT transformer was also used. Apex, from nvidia, and sequence-bucketing was used to speed up the training. Also layer-wise decreasing learning rate was used to tune the BERT transformer on the corpus. Run ``run_classifier_bert.py`` to train a BERT transformer. The model is saved as BERT.bin.
+Along with these **BERT transformer** was also used. Apex, from nvidia, and sequence-bucketing was used to speed up the training. Also layer-wise decreasing learning rate was used to tune the BERT transformer on the corpus. Run  
+``run_bert_classifier.py`` to train a BERT transformer. The model is saved as bert_model.bin.
 
-
-Requirements:
-- flair
-- elmoformanylangs
-- indic_transliteration
-- keras-tqdm
-- keras-self-attention
-- keras-multi-head
-- pytorch_pretrained_bert
 
 Papers used for reference:
 - Humor Detection in English-Hindi Code-Mixed Social Media Content : Corpus and Baseline System <sup>[link](https://arxiv.org/abs/1806.05513v1)</sup>
