@@ -1,9 +1,18 @@
+**Instructions to run**
+
 Run ``generate_embeddings.py`` to create embeddings and store in ``embeddings/``. ``models/All_model_trials.py`` contains all the tried architecture and models variations. ``models/Best_models.py`` contains the best models, whose hyperparameters have been tuned using grid search.
 The best models have been saved to be further used in ensemble model.
 
 Along with these **BERT transformer** was also used. Apex, from nvidia, and sequence-bucketing was used to speed up the training. Also layer-wise decreasing learning rate was used to tune the BERT transformer on the corpus. Run  
 ``run_bert_classifier.py`` to train a BERT transformer. The model is saved as bert_model.bin.
 
+**Future work**
+- Use XLnet
+
+**Results**
+- To be added soon
+
+**Project details**
 
 Papers used for reference:
 - Humor Detection in English-Hindi Code-Mixed Social Media Content : Corpus and Baseline System <sup>[link](https://arxiv.org/abs/1806.05513v1)</sup>
