@@ -14,7 +14,7 @@ import string
 
 
 def load_data():
-    with open("data/data.pkl", "rb") as f:
+    with open("../data/data.pkl", "rb") as f:
         corpus = pickle.load(f)
     return corpus
 
@@ -35,7 +35,6 @@ def indic_trans():
 
 
 def remove_stopwords():
-    #!wget 'https://raw.githubusercontent.com/Alir3z4/stop-words/master/hindi.txt'
     with open("hindi.txt") as f:
         stopwords_hi = f.read()
     stop_words_hi = set(stopwords_hi.split("\n"))
@@ -208,19 +207,19 @@ print("Generating fasttext embeddings")
 # FASTTEXT
 embedding_fasttext_hi, embedding_fasttext_en = initialize_embeddings_fasttext()
 embeddings_fasttext = get_embeddings_fasttext()
-np.save("Embeddings/fasttext_multi.npy", np.array(embeddings_fasttext))
+np.save("fasttext_multi.npy", np.array(embeddings_fasttext))
 print("Fasttext embeddings generated")
 
 print("Generating ELMO embeddings")
 # ELMO
 emb_hi, emb_en = intitialize_embeddings_elmo()
 embeddings_elmo = generate_embeddings()
-np.save("Embeddings/elmo_multi.npy", np.array(embeddings_elmo))
+np.save("elmo_multi.npy", np.array(embeddings_elmo))
 print("ELMO embeddings generated")
 
 print("Generating BERT embeddings")
 # BERT
 embedding_bert = initialize_embeddings_bert()
 emb = get_embeddings_bert()
-np.save("Embeddings/bert_multi.npy", np.array(emb))
+np.save("bert_multi.npy", np.array(emb))
 print("BERT embeddings generated")
