@@ -8,6 +8,7 @@ Along with these **BERT transformer** was also used. Apex, from nvidia, and sequ
 
 **Future work**
 - Use XLnet
+- Ensemble modeling
 
 **Results**
 - To be added soon
