@@ -1,3 +1,4 @@
+
 **Instructions to run**
 
 Run ``embeddings/generate_embeddings.py`` to create embeddings and store in ``embeddings/``. ``models/all_model_trials.py`` contains all the tried architecture and models variations. ``models/best_models.py`` contains the best models, whose hyperparameters have been tuned using grid search.
@@ -11,7 +12,17 @@ Along with these **BERT transformer** was also used. Apex, from nvidia, and sequ
 - Ensemble modeling
 
 **Results**
-- To be added soon
+
+A stratified train-test split of 0.8 was used for all the models:
+Results are written in the form: (test accuracy, train, accuracy)
+
+| Model        | Train Accuracy           | Test accuracy  |
+| ------------- |:-------------:| -----:|
+| BERT-cased-large      | 0.754 | 0.817 |
+| BERT-cased-base      | 0.731      |   0.826 |
+| BERT-uncased-base | 0.748      |    0.874 |
+| Keras Model | 0.737 | 0.762
+| Ensemble | WIP|WIP
 
 **Project details**
 

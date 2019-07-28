@@ -28,7 +28,7 @@ from keras_tqdm import TQDMNotebookCallback
 #--------------------------PRE-PROCESSING AND TRANSLITERATE-------------------------------#
  
 def load_data():
-    with open('../Data/data.pkl', 'rb') as f:
+    with open('../data/data.pkl', 'rb') as f:
         corpus = pickle.load(f)
     return corpus
 
